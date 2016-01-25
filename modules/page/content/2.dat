@@ -1,0 +1,27 @@
+﻿<?php
+$title = <<<EOT
+Скачать ModuleCMS
+EOT;
+
+$h1 = <<<EOT
+Скачать ModuleCMS
+EOT;
+
+$описание = <<<EOT
+Download ModuleCMS
+EOT;
+
+$ключи = <<<EOT
+Download, Скачать, Загрузить
+EOT;
+
+$content = <<<EOT
+<p><center><a href="./media/files/cms-v0-build-2016.01.21-1539.zip" target="_blank">Скачать ModuleCMS</a></center></p>
+
+EOT;
+
+$subcontent = <<<EOT
+<p>Посмотреть предыдущие версии</p>
+EOT;
+
+?>

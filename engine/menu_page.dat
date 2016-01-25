@@ -1,0 +1,16 @@
+<?php
+error_reporting(E_ALL);
+ob_start();
+
+$file_config = file('engine/module.dat');
+foreach($file_config as $ine)
+{
+	$el = explode('',$ine);
+	if($el[1] == 'on'){
+		echo '<li class="menu1"><a href="http://'.$site.'/'.$el[3].'/">'.$el[4].'</a></li>',"\r\n";
+	}
+}
+
+$menu = ob_get_contents();
+ob_end_clean();
+?>

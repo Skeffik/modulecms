@@ -1,0 +1,22 @@
+﻿<?php // Статичные блоки для всего сайта
+
+$topmenu = <<<EOT
+<li class="active"><a href="//$site"><span class="glyphicon glyphicon-home"></span> Главная</a></li>
+<li><a href="./#"><span class="glyphicon glyphicon-file"></span> Статьи</a></li>
+<li><a href="./#"><span class="glyphicon glyphicon-bell"></span> Новости</a></li>
+<li><a href="./media/files/cms-v0-build-2016.01.21-1539.zip"><span class="glyphicon glyphicon-download"></span> Скачать</a></li>
+<li><a href="./#"><span class="glyphicon glyphicon-envelope"></span> Контакты</a></li>
+EOT;
+
+$contact = <<<EOT
+Россия, Москва, ул. Мира <br>
+тел: +7 800 1234567<br>
+skype: ura-a-a-a<br>
+EOT;
+
+$copy = <<<EOT
+© Россия <a href="//$site">Модульная система управления сайтом</a> 2016
+EOT;
+
+
+?>

@@ -1,0 +1,28 @@
+<?php 
+//include protection
+/* Constant that is checked in included files to prevent direct access.
+ * define() is used in the installation folder rather than "const" to not error for PHP 5.2 and lower
+ */
+defined('_CMSEXEC') or die('Restricted access');
+
+// Настройки стартового модуля 
+// Возможно этот файл и не нужен, а всё считывать на лету из file_cms/moduli.dat
+	$modul_id = '1';
+	$modul_dir = 'page';
+	$modul_status = 'on';
+	$modul_data = '23.11.2015';
+	$modul_alias = 'page';
+	$modul_name = 'Статические страницы';
+	$modul_skin = 'default';
+	$modul_default = 'on';
+	$modul_db = '1';
+	$modul_db_host = 'localhost';
+	$modul_db_name = '';
+	$modul_db_user = '';
+	$modul_db_pass = '';
+
+        $site = $_SERVER['SERVER_NAME'];
+        $menu_active_modules = '';
+        $showerrors="on";
+        $webapp="on";//on, off. service
+        ?>

@@ -1,0 +1,16 @@
+DirectoryIndex index.php
+Options -Indexes
+AddDefaultCharset UTF-8
+
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTP_HOST} ^www\.(.*) [NC]
+RewriteRule ^/?(.*) http://%1/$1 [L,R=permanent]
+
+#RewriteRule ^(.*).html$ index.php?alias=$1 [L]
+RewriteRule ^.htaccess$ - [F]
+
+<FilesMatch "\.(dat|csv|info)$">
+Order Deny,Allow
+Deny from all
+</FilesMatch>
